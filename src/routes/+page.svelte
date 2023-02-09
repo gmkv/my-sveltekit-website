@@ -64,7 +64,7 @@
 		justify-content: space-between;
 		align-items: flex-start;
 		padding: clamp(3rem, calc(1.88rem + 5.63vw), 7.5rem);
-		min-height: 100vh;
+		min-height: 100vmin;
 	}
 
 	a {

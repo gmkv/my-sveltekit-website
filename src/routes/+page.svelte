@@ -120,6 +120,14 @@
 		hyphens: auto;
 	}
 
+	@font-face {
+		font-family: 'Press Start 2P';
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+		src: url(/tagline-font.woff2) format('woff2');
+	}
+
 	@keyframes reveal-tagline {
 		from {
 			color: var(--initial-bg);

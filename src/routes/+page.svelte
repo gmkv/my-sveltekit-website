@@ -32,7 +32,7 @@
 		margin: 0;
 	}
 
-	:gloal(html) {
+	:global(html) {
 		animation: reveal-page 1s ease-out 1 forwards;
 	}
 

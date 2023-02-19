@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--primary: hsl(220 91% 37%);
+	--secondary: hsl(209 97% 88%);
+	--initial-bg: var(--secondary);
+	--target-bg: hsl(209 97% 91%);
+}
+
+html {
+	animation: reveal-page 1s ease-out 1 forwards;
+}
+
+@keyframes reveal-page {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+body {
+	transition: background-color;
+	background-color: var(--initial-bg);
+	font-size: 100%;
+	animation: reveal-bg 4s ease-in 1 forwards;
+}
+
+@keyframes reveal-bg {
+	from {
+		background-color: var(--initial-bg);
+	}
+
+	to {
+		background-color: var(--target-bg);
+	}
+}
+
+@font-face {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(./inter.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	src: url(./inter.woff2) format("woff2");
+}

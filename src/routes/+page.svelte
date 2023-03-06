@@ -7,10 +7,12 @@
 <header>
 	<Logo />
 
-	<p class="description">software developer based in Sofia</p>
+	<p class="description">
+		software developer <del>based in Sofia</del> <ins>currently relocating</ins>
+	</p>
 	<ul class="links">
 		<li>
-			<a href="mailto:gmnullptr@gmail.com"><EmailIcon />contact</a>
+			<a href="mailto:gminkov@outlook.com"><EmailIcon />contact</a>
 		</li>
 		<li>
 			<a href="https://github.com/gmkv"> <GithubIcon />github</a>
@@ -25,6 +27,22 @@
 </div>
 
 <style>
+	del {
+		text-decoration: line-through;
+		background-color: #fbb;
+	}
+
+	ins {
+		text-decoration: none;
+		background-color: #d4fcbc;
+	}
+
+	del,
+	ins {
+		padding: 0.25rem;
+		border-radius: 0.5rem;
+	}
+
 	ul {
 		list-style: none;
 	}
